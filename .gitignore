@@ -1,0 +1,7 @@
+*.riscv
+*.riscv.dump
+.vscode
+Mem.hex
+elf_to_hex/elf_to_hex*
+*.log
+*.txt

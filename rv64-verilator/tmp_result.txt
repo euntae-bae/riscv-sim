@@ -1,0 +1,23 @@
+1: TOP.mkTop_HW_Side.soc_top.boot_rom_axi4_deburster::AXI4_Deburster.rl_reset
+1: TOP.mkTop_HW_Side.soc_top.mem0_controller_axi4_deburster::AXI4_Deburster.rl_reset
+================================================================
+Bluespec RISC-V standalone system simulation v1.2
+Copyright (c) 2017-2019 Bluespec, Inc. All Rights Reserved.
+================================================================
+INFO: watch_tohost = 1, tohost_addr = 0x80001000
+2:TOP.mkTop_HW_Side.soc_top.rl_reset_start_initial ...
+3: Core.rl_cpu_hart0_reset_from_soc_start
+================================================================
+CPU: Bluespec  RISC-V  Piccolo  v3.0 (RV64)
+Copyright (c) 2016-2020 Bluespec, Inc. All Rights Reserved.
+================================================================
+71: TOP.mkTop_HW_Side.soc_top.core.cpu.rl_reset_complete: restart at PC = 0x1000
+73: Core.rl_cpu_hart0_reset_complete
+73: Near_Mem_IO_AXI4.set_addr_map: addr_base 0x2000000 addr_lim 0x200c000
+74:TOP.mkTop_HW_Side.soc_top.rl_reset_complete_initial
+74: Mem_Controller.set_addr_map: addr_base 0x80000000 addr_lim 0x90000000
+31484: Mem_Controller.rl_process_wr_req: addr 0x80001000 (<tohost>) data 0x1
+PASS
+31485: TOP.mkTop_HW_Side:.rl_terminate: soc_top status is 0x1 (= 0d1)
+Simulation speed: 31484 cycles, 435102108 nsecs  = 72360 cycles/sec
+- Verilog_RTL/mkTop_HW_Side_edited.v:363: Verilog $finish
